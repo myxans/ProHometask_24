@@ -1,4 +1,7 @@
-let color = document.querySelectorAll('.red');
-for (let i = 0; i <= color.length; i++) {
-    color[i].style.backgroundColor = 'red';
+let color = document.querySelector('table');
+
+let rows = color.rows;
+
+for (let i = 0; i < rows.length; i++) {
+	rows[i].cells[i].style.background = 'red';
 }
